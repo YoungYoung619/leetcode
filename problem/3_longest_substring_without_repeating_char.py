@@ -33,7 +33,7 @@ def lengthOfLongestSubstring(s):
     :type s: str
     :rtype: int
     """
-    #         ## method-1 暴力搜索 time O(n^2)
+    #         ## method-1 violence search time O(n^2)
     #         def sub_len(head_index, judge_cur_index, max_len):
     #             if judge_cur_index >= len(s) or s[judge_cur_index] in s[head_index:judge_cur_index]:
     #                 return max_len
@@ -51,7 +51,7 @@ def lengthOfLongestSubstring(s):
     #                 break
     #         return max_len
 
-    ## method-2 dynamic planning
+    ## method-2 dynamic planning, time about O(n)
     i = 0
     global_max = 0
     local_max = 0
