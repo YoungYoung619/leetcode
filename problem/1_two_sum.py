@@ -30,6 +30,7 @@ def twoSum(nums, target):
     :type target: int
     :rtype: List[int]
     """
+    """method-1 time O(n), traverse all, get rest"""
     for i in range(len(nums)):
         res = target - nums[i]
         if res in nums:
